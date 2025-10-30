@@ -113,7 +113,7 @@ export default function MathBubblePractice() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white flex flex-col items-center p-6">
-      <h1 className="text-3xl font-bold mb-4">Math Bubble Practice</h1>
+      <h1 className="text-3xl font-bold mb-4">Accenture Math Bubble Practice</h1>
 
       <div className="flex items-center gap-2 mb-4">
         <label htmlFor="timeSelect">Choose Time: </label>
@@ -184,6 +184,27 @@ export default function MathBubblePractice() {
       </div>
 
       {message && <div className="mt-4 text-yellow-400 text-lg">{message}</div>}
+       {/* Footer Section */}
+      <footer className="mt-10 border-t border-gray-700 pt-4 text-center text-sm text-gray-400">
+        © {new Date().getFullYear()} G. Rohith —{" "}
+        <a
+          href="https://grohith.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          Portfolio
+        </a>{" "}
+        |{" "}
+        <a
+          href="https://github.com/Rohith1888"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-400 hover:underline"
+        >
+          GitHub
+        </a>
+      </footer>
     </div>
   );
 }
